@@ -14,6 +14,7 @@
         <th>FOTOĞRAF</th>
         <th>CİNSİYET</th>
         <th>KULUP</th>
+        <th>İŞLEMLER</th>
     </tr>
     <tbody>
         @foreach (var ogr in Model)
@@ -25,9 +26,12 @@
                 <td>@ogr.OGRFOTOGRAF</td>
                 <td>@ogr.OGRCINSIYET</td>
                 <td>@ogr.OGRKULUP</td>
-             </tr>
+                <td><a href="/Ogrenci/Sil/@ogr.OGRENCIID" class="btn btn-danger">Sil</a>
+                    <a href="/Ogrenci/Guncelle/@ogr.OGRENCIID" class="btn btn-primary ">Güncelle</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
 
-<a href="/Ogrenci/YeniOgrenci" class="btn btn-primary">Yeni Öğrenci Ekleme</a>
+<a href="/Ogrenci/YeniOgrenci" class="btn btn-success">Yeni Öğrenci Ekleme</a>

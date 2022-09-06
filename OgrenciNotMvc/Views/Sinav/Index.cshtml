@@ -17,6 +17,7 @@
         <th>PROJE</th>
         <th>ORTALAMA</th>
         <th>DURUM</th>
+        <th>Güncelle</th>
     </tr>
     <tbody>
         @foreach (var ogr in Model)
@@ -31,9 +32,13 @@
                 <td>@ogr.PROJE</td>
                 <td>@ogr.ORTALAMA</td>
                 <td>@ogr.DURUM</td>
+                <td>
+                    <a href="/Sinav/Sil/@ogr.NOTID" class="btn btn-warning">Güncelle</a>
+                   
+                </td>
             </tr>
         }
     </tbody>
 </table>
 
-<a href="/Sinav/YeniSinav" class=" btn btn-primary">Not Ekle</a>
+<a href="/Sinav/YeniSinav" class=" btn btn-success">Not Ekle</a>
