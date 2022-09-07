@@ -585,6 +585,10 @@
     <Content Include="Views\Ogrenci\YeniOgrenci.cshtml" />
     <Content Include="Views\Sinav\YeniSinav.cshtml" />
     <Content Include="Views\HesapTest\Index.cshtml" />
+    <Content Include="Views\Kulup\KulupGetir.cshtml" />
+    <Content Include="Views\Default\DersGetir.cshtml" />
+    <Content Include="Views\Ogrenci\OgrenciGetir.cshtml" />
+    <Content Include="Views\Sinav\SinavGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
